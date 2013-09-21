@@ -1,9 +1,47 @@
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/story_detail"
-    style="?android:attr/textAppearanceLarge"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:textIsSelectable="true"
-    tools:context=".StoryDetailFragment" />
+    android:gravity="center_horizontal" >
+
+    <Button
+        android:id="@+id/choice_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/choice_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/choice_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/choice_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/go_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_weight="1"
+        android:text="GO!" />
+
+</LinearLayout>
