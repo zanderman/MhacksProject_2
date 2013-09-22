@@ -2,57 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal" 
-    android:background="@color/white">
-
-    <Button
-        android:id="@+id/go_button"
-        android:layout_width="228dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="46dp"
-        android:text="GO!" 
-        android:onClick="playGame"/>
-
-    <Button
-        android:id="@+id/choice_1"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/choice_2"
-        android:layout_alignBottom="@+id/choice_2"
-        android:layout_alignLeft="@+id/go_button"
-        android:text="1" 
-        android:onClick="onClick" />
-
-    <Button
-        android:id="@+id/choice_4"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/go_button"
-        android:layout_alignRight="@+id/go_button"
-        android:text="4" 
-        android:onClick="onClick"/>
-
-    <Button
-        android:id="@+id/choice_3"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/choice_4"
-        android:layout_alignBottom="@+id/choice_4"
-        android:layout_toLeftOf="@+id/choice_4"
-        android:text="3" 
-        android:onClick="onClick" />
-
-    <Button
-        android:id="@+id/choice_2"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/choice_3"
-        android:layout_alignBottom="@+id/choice_3"
-        android:layout_toLeftOf="@+id/choice_3"
-        android:text="2" 
-        android:onClick="onClick" />
+    android:background="@color/blue_l"
+    android:gravity="center_horizontal" >
 
     <TextView
         android:id="@+id/text_dialog"
@@ -60,15 +11,56 @@
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:background="@color/white"
-        android:hint="Loading..." />
+        android:hint="Loading..."
+        android:shadowColor="@color/grey"
+        android:textAlignment="center"
+        android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/choice_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/choice_3"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp"
-        android:hint="Option #" />
+        android:layout_centerVertical="true"
+        android:background="@color/blue_l"
+        android:onClick="onClick"
+        android:text="--- 1 ---"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/choice_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choice_3"
+        android:layout_below="@+id/choice_3"
+        android:layout_marginTop="17dp"
+        android:background="@color/blue_l"
+        android:onClick="onClick"
+        android:text="--- 4 ---"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/choice_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choice_1"
+        android:layout_below="@+id/choice_1"
+        android:layout_marginTop="11dp"
+        android:background="@color/blue_l"
+        android:onClick="onClick"
+        android:text="--- 2 ---"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/choice_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/choice_2"
+        android:layout_below="@+id/choice_2"
+        android:layout_marginTop="20dp"
+        android:background="@color/blue_l"
+        android:onClick="onClick"
+        android:text="--- 3 ---"
+        android:textStyle="italic" />
 
 </RelativeLayout>

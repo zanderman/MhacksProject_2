@@ -12,6 +12,7 @@ public final class R {
     }
     public static final class color {
         public static final int blue_l=0x7f040001;
+        public static final int grey=0x7f040003;
         public static final int red=0x7f040000;
         public static final int white=0x7f040002;
     }
@@ -20,16 +21,14 @@ public final class R {
     }
     public static final class id {
         public static final int choice_1=0x7f070004;
-        public static final int choice_2=0x7f070005;
-        public static final int choice_3=0x7f070007;
-        public static final int choice_4=0x7f070006;
-        public static final int go_button=0x7f070003;
+        public static final int choice_2=0x7f070007;
+        public static final int choice_3=0x7f070006;
+        public static final int choice_4=0x7f070005;
         public static final int imageView1=0x7f070002;
-        public static final int library_list=0x7f07000a;
+        public static final int library_list=0x7f070008;
         public static final int story_detail_container=0x7f070000;
         public static final int story_list=0x7f070001;
-        public static final int textView1=0x7f070009;
-        public static final int text_dialog=0x7f070008;
+        public static final int text_dialog=0x7f070003;
     }
     public static final class layout {
         public static final int activity_story_detail=0x7f030000;
