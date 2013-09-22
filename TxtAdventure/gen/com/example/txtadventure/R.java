@@ -14,13 +14,16 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int choice_1=0x7f060002;
-        public static final int choice_2=0x7f060003;
-        public static final int choice_3=0x7f060004;
+        public static final int choice_1=0x7f060003;
+        public static final int choice_2=0x7f060004;
+        public static final int choice_3=0x7f060006;
         public static final int choice_4=0x7f060005;
-        public static final int go_button=0x7f060006;
+        public static final int go_button=0x7f060002;
+        public static final int library_list=0x7f060009;
         public static final int story_detail_container=0x7f060000;
         public static final int story_list=0x7f060001;
+        public static final int textView1=0x7f060008;
+        public static final int text_dialog=0x7f060007;
     }
     public static final class layout {
         public static final int activity_story_detail=0x7f030000;
@@ -42,6 +45,7 @@ public final class R {
         public static final int activity_story_list=0x7f030001;
         public static final int activity_story_twopane=0x7f030002;
         public static final int fragment_story_detail=0x7f030003;
+        public static final int library_story_detail=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040000;

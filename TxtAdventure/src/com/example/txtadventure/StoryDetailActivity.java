@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 /**
  * An activity representing a single Story detail screen. This
@@ -64,4 +66,26 @@ public class StoryDetailActivity extends FragmentActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    
+    
+    
+    // ------------- BUTTON ACTIONS ---------------
+    public void onClick(View view) {
+		//String idString = view.getId();
+		//int x = 2;
+		
+		TextView t=new TextView(this); 
+		t=(TextView)findViewById(R.id.textView1);
+		t.setText(view.getId());
+		
+		
+	}
+    
+    public void playGame(View view) {
+		//view.getId();
+		
+	}
+    
+    
+    
 }

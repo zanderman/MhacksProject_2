@@ -5,9 +5,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.example.txtadventure.dummy.DummyContent;
+import com.example.txtadventure.dummy.LibraryContent;
 
 /**
  * A fragment representing a single Story detail screen.
@@ -26,6 +26,8 @@ public class StoryDetailFragment extends Fragment {
      * The dummy content this fragment is presenting.
      */
     private DummyContent.DummyItem mItem;
+    //private LibraryContent.LibraryItem lItem;
+
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -46,15 +48,18 @@ public class StoryDetailFragment extends Fragment {
         }
     }
 
+    /* We want to first open the "library_story_detail.xml" file.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_story_detail, container, false);
 
         // Show the dummy content as text in a TextView.
-        if (mItem != null) {
+        //if (mItem != null) {
             //((TextView) rootView.findViewById(R.id.story_detail)).setText(mItem.content);
-        }
+        //}
+        
 
         return rootView;
     }

@@ -1,47 +1,73 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal" >
 
     <Button
+        android:id="@+id/go_button"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:text="GO!" 
+        android:onClick="playGame"/>
+
+    <Button
         android:id="@+id/choice_1"
-        android:layout_width="match_parent"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="1" />
-
-    <Button
-        android:id="@+id/choice_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="2" />
-
-    <Button
-        android:id="@+id/choice_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="3" />
+        android:layout_alignBaseline="@+id/choice_2"
+        android:layout_alignBottom="@+id/choice_2"
+        android:layout_alignLeft="@+id/go_button"
+        android:text="1" 
+        android:onClick="onClick" />
 
     <Button
         android:id="@+id/choice_4"
-        android:layout_width="match_parent"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="4" />
+        android:layout_above="@+id/go_button"
+        android:layout_alignRight="@+id/go_button"
+        android:text="4" 
+        android:onClick="onClick"/>
 
     <Button
-        android:id="@+id/go_button"
+        android:id="@+id/choice_3"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/choice_4"
+        android:layout_alignBottom="@+id/choice_4"
+        android:layout_toLeftOf="@+id/choice_4"
+        android:text="3" 
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/choice_2"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/choice_3"
+        android:layout_alignBottom="@+id/choice_3"
+        android:layout_toLeftOf="@+id/choice_3"
+        android:text="2" 
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Loading..." />
+
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:layout_weight="1"
-        android:text="GO!" />
+        android:layout_above="@+id/choice_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:hint="Selection..." />
 
-</LinearLayout>
+</RelativeLayout>
