@@ -68,6 +68,10 @@ public class StoryDetailActivity extends FragmentActivity {
     }
     
     
+
+    /* This section of code is for manipulation of each of the software
+     * buttons and their associated functions.
+    */
     
     // ------------- BUTTON ACTIONS ---------------
     public void onClick(View view) {
