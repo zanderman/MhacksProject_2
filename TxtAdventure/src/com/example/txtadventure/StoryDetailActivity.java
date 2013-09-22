@@ -46,6 +46,8 @@ public class StoryDetailActivity extends FragmentActivity {
         Log.i(StoryDetailActivity.class.getName(), "Number of entries " + jsonArray.length());
         for(int i =0; i < jsonArray.length(); i++) {
         	JSONObject jsonObject = jsonArray.getJSONObject(i);
+        	Story story = new Story(jsonObject.getString("title"), jsonObject.getString("author"), 
+        			jsonObject.getString("description"), jsonObject.getString("id"));
         	Log.i(StoryDetailActivity.class.getName(), jsonObject.getString("text"));
         }
         
@@ -55,10 +57,12 @@ public class StoryDetailActivity extends FragmentActivity {
         
         
         // Once we have determined a story, we can get it's scenes.
-        int storyId = 0;  //EDIT LATER w/real scene ID
-		String sceneString = "http://mhacks-text-adventure.appspot.com/story/" + storyId + ".json";
+        //int storyId = 0;  //EDIT LATER w/real scene ID
+		//String sceneString = "http://mhacks-text-adventure.appspot.com/story/" + storyId + ".json";
         // ^ will need to grab the initial scene in the story during 'onCreate'.
 
+		
+		/*
 
         // ------------ INITIALIZATION -----------
 		// Setup each button to be operated on (will need to alter their text once a story is picked).
@@ -67,12 +71,13 @@ public class StoryDetailActivity extends FragmentActivity {
 		t2=(TextView)findViewById(R.id.choice_2);
 		t3=(TextView)findViewById(R.id.choice_3);
 		t4=(TextView)findViewById(R.id.choice_4);
-
+        */ 
+		
         // Initialize the text of each button to be a response.
-        t1.setText(/*Response #1*/);
-        t2.setText(/*Response #2*/);
-        t3.setText(/*Response #3*/);
-        t4.setText(/*Response #4*/);
+        //t1.setText(/*Response #1*/);
+        //t2.setText(/*Response #2*/);
+        //t3.setText(/*Response #3*/);
+        //t4.setText(/*Response #4*/);
         // ----------------------------------------
         
         

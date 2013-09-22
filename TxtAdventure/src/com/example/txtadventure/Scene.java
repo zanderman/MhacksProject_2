@@ -1,3 +1,5 @@
+package com.example.txtadventure;
+
 public class Scene {
 
    private String description;
@@ -10,14 +12,14 @@ public class Scene {
       this.description = description;
       this.actions = actions;
       this.keyID = keyID;
-      targets = new String[actions.length]();
+      targets = new String[actions.length];
    }
 
    public void parseActionTargets(String[] targets) {
       for (int i = 0; i < targets.length; i++) {
          targets[i] = actions[i].substring(actions[i].indexOf("|") + 1,
              actions[i].length());
-         actions[i] = actions[i].substring(actions[i].indexOf("|");
+         actions[i] = actions[i].substring(actions[i].indexOf("|"));
       }
    }
 

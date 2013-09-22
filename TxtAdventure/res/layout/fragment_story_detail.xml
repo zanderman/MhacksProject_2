@@ -12,7 +12,6 @@
         android:layout_alignParentTop="true"
         android:background="@color/white"
         android:hint="Loading..."
-        android:shadowColor="@color/grey"
         android:textAlignment="center"
         android:textSize="20sp" />
 
