@@ -71,18 +71,32 @@ public class StoryDetailActivity extends FragmentActivity {
     
     // ------------- BUTTON ACTIONS ---------------
     public void onClick(View view) {
-		//String idString = view.getId();
-		//int x = 2;
-		
+    	
 		TextView t=new TextView(this); 
 		t=(TextView)findViewById(R.id.textView1);
-		t.setText(view.getId());
-		
-		
+		switch(view.getId()){
+		case R.id.choice_1:
+			t.setText("Option #1");
+			break;
+		case R.id.choice_2:
+			t.setText("Option #2");
+			break;
+		case R.id.choice_3:
+			t.setText("Option #3");
+			break;
+		case R.id.choice_4:
+			t.setText("Option #4");
+			break;
+		}
 	}
     
     public void playGame(View view) {
 		//view.getId();
+    	
+    	// INSERT game code here.  (when GO is pressed).
+    	TextView t=new TextView(this); 
+		t=(TextView)findViewById(R.id.text_dialog);
+		//t.setText(/*ENTER DATA HERE*/);
 		
 	}
     

@@ -68,6 +68,6 @@
         android:layout_above="@+id/choice_3"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
-        android:hint="Selection..." />
+        android:hint="Option #" />
 
 </RelativeLayout>
